@@ -1,8 +1,13 @@
+import os
+Active_Key = os.getenv('Active_Key')
+Username = os.getenv('Username')
+bot_token = os.getenv('bot_token')
+
 from telegram.ext import Updater, MessageHandler, Filters
 
 from Adafruit_IO import Client
  
-aio = Client('jatshub2322','aio_RiJG240udsJTJz2f4e4HxHdrt5FV')
+aio = Client(Username,Active_Key)
  
 def jat23(bot,update):
   chat_id = bot.message.chat_id
@@ -37,7 +42,7 @@ def main(bot,update):
   elif a =="turn off fan":
     vedh4(bot,update) 
      
-bot_token =  '1947845258:AAFphKxYcky_wzIMZFvrxNY-Rw-JHd2wJ04'
+
 u = Updater(bot_token,use_context=True)
 dp = u.dispatcher
 dp.add_handler(MessageHandler(Filters.text,main))
