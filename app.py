@@ -4,25 +4,25 @@ from Adafruit_IO import Client
  
 aio = Client('jatshub2322','aio_RiJG240udsJTJz2f4e4HxHdrt5FV')
  
-def vedh1(bot,update):
+def jat23(bot,update):
   chat_id = bot.message.chat_id
   bot.message.reply_text('light turned on')
-  aio.send('telebot',1)
+  aio.send('major-2-dot-0telebot',22)
  
-def vedh2(bot,update):
+def jat23(bot,update):
   chat_id = bot.message.chat_id
   bot.message.reply_text('light turned off')
-  aio.send('telebot',0)
+  aio.send('major-2-dot-0telebot',23)
  
-def vedh3(bot,update):
+def jat23(bot,update):
   chat_id = bot.message.chat_id
   bot.message.reply_text('Fan turned on')
-  aio.send('telebot',4)
+  aio.send('major-2-dot-0',22)
  
-def vedh4(bot,update):
+def jat23(bot,update):
   chat_id = bot.message.chat_id
   bot.message.reply_text('Fan turned off')
-  aio.send('telebot',2)
+  aio.send('major-2-dot-0',23)
  
  
 def main(bot,update):
