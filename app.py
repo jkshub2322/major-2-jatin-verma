@@ -17,17 +17,17 @@ def jat23(bot,update):
 def jat23(bot,update):
   chat_id = bot.message.chat_id
   bot.message.reply_text('light turned off')
-  aio.send('major-2-dot-0telebot',23)
+  aio.send('major-2-dot-0telebot',30)
  
 def jat23(bot,update):
   chat_id = bot.message.chat_id
   bot.message.reply_text('Fan turned on')
-  aio.send('major-2-dot-0',22)
+  aio.send('major-2-dot-0',23)
  
 def jat23(bot,update):
   chat_id = bot.message.chat_id
   bot.message.reply_text('Fan turned off')
-  aio.send('major-2-dot-0',23)
+  aio.send('major-2-dot-0',31)
  
  
 def main(bot,update):
